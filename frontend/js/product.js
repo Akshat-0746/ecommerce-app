@@ -31,7 +31,30 @@ function buildDetail(product) {
     stock.textContent =
         product.stock > 0 ? `In stock (${product.stock} available)` : "Out of stock";
 
-    info.append(badge, title, price, desc, stock);
+    const addButton = document.createElement("button");
+    addButton.className = "add-cart";
+    addButton.textContent = "Add to cart";
+    addButton.disabled = product.stock <= 0;
+    addButton.addEventListener("click", async () => {
+        try {
+            const response = await fetch("/api/cart/items", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({product_id: product.id, quantity: 1})
+            });
+            const data = await response.json();
+            if (response.status === 401) {
+                window.location.href = "auth.html";
+                return;
+            }
+            if (!response.ok) throw new Error(data.error || "Could not add item");
+            stock.textContent = "Added to cart.";
+        } catch (error) {
+            stock.textContent = error.message;
+        }
+    });
+
+    info.append(badge, title, price, desc, stock, addButton);
     wrapper.append(img, info);
     return wrapper;
 }

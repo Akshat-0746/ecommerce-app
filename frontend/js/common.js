@@ -12,3 +12,16 @@ async function fetchJSON(url) {
     }
     return data;
 }
+
+fetch("/api/auth/me")
+    .then(response => response.ok ? response.json() : null)
+    .then(user => {
+        const link = document.getElementById("auth-link");
+        if (link && user) {
+            link.textContent = user.name;
+            link.href = "cart.html";
+        }
+        const adminLink = document.getElementById("admin-link");
+        if (adminLink && user?.role === "admin") adminLink.hidden = false;
+    })
+    .catch(() => {});

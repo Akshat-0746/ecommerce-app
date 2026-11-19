@@ -1,11 +1,11 @@
 INSERT INTO products (name, description, price, image_url, category, stock) VALUES
-('Wireless Headphones', 'Over-ear Bluetooth headphones with noise cancellation and 30-hour battery life.', 89.99, 'https://picsum.photos/seed/headphones/400/300', 'Electronics', 25),
-('Mechanical Keyboard', 'Compact 75% keyboard with hot-swappable switches and RGB backlight.', 64.50, 'https://picsum.photos/seed/keyboard/400/300', 'Electronics', 40),
-('Smart Watch', 'Fitness tracker with heart-rate monitor, GPS and a week-long battery.', 129.00, 'https://picsum.photos/seed/watch/400/300', 'Electronics', 15),
-('Running Shoes', 'Lightweight breathable running shoes with cushioned soles.', 74.99, 'https://picsum.photos/seed/shoes/400/300', 'Fashion', 60),
-('Denim Jacket', 'Classic fit denim jacket with a soft inner lining.', 55.00, 'https://picsum.photos/seed/jacket/400/300', 'Fashion', 30),
-('Canvas Backpack', 'Water-resistant 25L backpack with a padded laptop compartment.', 42.75, 'https://picsum.photos/seed/backpack/400/300', 'Fashion', 50),
-('Ceramic Coffee Mug Set', 'Set of four handmade 350ml ceramic mugs in assorted colors.', 28.00, 'https://picsum.photos/seed/mugs/400/300', 'Home', 80),
-('Desk Lamp', 'Adjustable LED desk lamp with three brightness levels and USB charging.', 34.99, 'https://picsum.photos/seed/lamp/400/300', 'Home', 45),
-('Python Programming Book', 'Beginner-friendly guide to Python with hands-on projects.', 24.99, 'https://picsum.photos/seed/pythonbook/400/300', 'Books', 100),
-('Notebook Pack', 'Pack of three ruled A5 notebooks with durable hard covers.', 12.50, 'https://picsum.photos/seed/notebook/400/300', 'Books', 120);
+('Wireless Headphones', 'Over-ear Bluetooth headphones with noise cancellation and 30-hour battery life.', 89.99, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&h=600&q=80', 'Electronics', 25),
+('Mechanical Keyboard', 'Compact 75% keyboard with hot-swappable switches and RGB backlight.', 64.50, 'https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&h=600&q=80', 'Electronics', 40),
+('Smart Watch', 'Fitness tracker with heart-rate monitor, GPS and a week-long battery.', 129.00, 'https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=800&h=600&q=80', 'Electronics', 15),
+('Running Shoes', 'Lightweight breathable running shoes with cushioned soles.', 74.99, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&h=600&q=80', 'Fashion', 60),
+('Denim Jacket', 'Classic fit denim jacket with a soft inner lining.', 55.00, 'https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=800&h=600&q=80', 'Fashion', 30),
+('Canvas Backpack', 'Water-resistant 25L backpack with a padded laptop compartment.', 42.75, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&h=600&q=80', 'Fashion', 50),
+('Ceramic Coffee Mug Set', 'Set of four handmade 350ml ceramic mugs in assorted colors.', 28.00, 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&h=600&q=80', 'Home', 80),
+('Desk Lamp', 'Adjustable LED desk lamp with three brightness levels and USB charging.', 34.99, 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&h=600&q=80', 'Home', 45),
+('Python Programming Book', 'Beginner-friendly guide to Python with hands-on projects.', 24.99, 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&h=600&q=80', 'Books', 100),
+('Notebook Pack', 'Pack of three ruled A5 notebooks with durable hard covers.', 12.50, 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=800&h=600&q=80', 'Books', 120);

@@ -1,6 +1,4 @@
-DROP TABLE IF EXISTS products;
-
-CREATE TABLE products (
+CREATE TABLE IF NOT EXISTS products (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
     name        TEXT    NOT NULL,
     description TEXT    NOT NULL,
@@ -10,4 +8,4 @@ CREATE TABLE products (
     stock       INTEGER NOT NULL DEFAULT 0 CHECK (stock >= 0)
 );
 
-CREATE INDEX idx_products_category ON products (category);
+CREATE INDEX IF NOT EXISTS idx_products_category ON products (category);

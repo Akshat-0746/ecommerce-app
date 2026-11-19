@@ -17,6 +17,9 @@ body {
     font-weight: 700;
     text-decoration: none;
 }
+.site-header { display: flex; align-items: center; justify-content: space-between; }
+.header-nav { display: flex; gap: 1rem; }
+.header-nav a { color: #fff; text-decoration: none; }
 
 .container {
     max-width: 1100px;
@@ -118,3 +121,26 @@ body {
 @media (max-width: 700px) {
     .detail { grid-template-columns: 1fr; }
 }
+
+.auth-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+.auth-form { display: flex; flex-direction: column; gap: 0.7rem; background: #fff; padding: 1.5rem; border-radius: 10px; }
+.auth-form input, .auth-form button { padding: 0.7rem; border: 1px solid #c8ccd2; border-radius: 6px; }
+.auth-form button { background: #2563eb; color: #fff; cursor: pointer; }
+.cart-row { display: grid; grid-template-columns: 80px 1fr 110px 110px; align-items: center; gap: 1rem; background: #fff; margin-bottom: 0.7rem; padding: 0.7rem; border-radius: 8px; }
+.cart-row img { width: 80px; height: 80px; object-fit: cover; }
+.cart-row input { width: 70px; padding: 0.4rem; }
+.cart-row button { padding: 0.4rem; cursor: pointer; }
+.add-cart { padding: 0.6rem 1rem; background: #2563eb; color: #fff; border: 0; border-radius: 6px; cursor: pointer; }
+
+.admin-form { display: flex; flex-direction: column; gap: 0.8rem; background: #fff; padding: 1.2rem; border-radius: 10px; margin-bottom: 2rem; }
+.admin-form label { display: flex; flex-direction: column; gap: 0.35rem; font-weight: 600; }
+.admin-form input, .admin-form textarea { width: 100%; padding: 0.65rem; border: 1px solid #c8ccd2; border-radius: 6px; font: inherit; }
+.admin-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem; }
+.admin-actions { display: flex; gap: 0.5rem; }
+.admin-actions button { padding: 0.55rem 0.8rem; border: 1px solid #c8ccd2; border-radius: 6px; cursor: pointer; }
+.admin-actions button[type="submit"] { background: #2563eb; color: #fff; border-color: #2563eb; }
+.admin-actions .danger-button { color: #b91c1c; }
+.product-admin-list { display: flex; flex-direction: column; gap: 0.7rem; }
+.product-admin-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: #fff; padding: 0.8rem 1rem; border-radius: 8px; }
+.product-admin-row h3, .product-admin-row p { margin: 0.2rem 0; }
+.product-admin-row p { color: #555; }
